@@ -1,0 +1,25 @@
+.sizeFilter{
+  font-family: 'Inria Serif', serif;
+  width: 15%;
+  margin-right: 20px;
+  .size{
+    margin:5px 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:#ececec;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    span{
+      font-weight: 300;
+      position: relative;
+      top:6px;
+      font-size:.8em;
+    }
+  }
+  .active{
+    background: #1b1a20;
+    color:#fff;
+  }
+}

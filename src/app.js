@@ -1,7 +1,8 @@
 import React from 'react';
+import Shopping  from './containers/shopping';
 function App() {
   return (
-    <h1>Hello World</h1>
+    <Shopping />
   )
 }
 export default App;
