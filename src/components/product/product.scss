@@ -1,23 +1,42 @@
 .product{
   font-family: 'Inria Serif', serif;
-  width: 25%;
+  padding: 10px;
+  width: 22%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   border:1px solid transparent;
   cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+
+  .free_shipping{
+    display: inline-block;
+    position: absolute;
+    background: #000;
+    right: 0;
+    top:0;
+    padding: 5px;
+    span{
+      line-height: 24px;
+      color:#fff;
+      font-size:12px;
+      font-weight: 300;
+    }
+  }
 .product_image{
   img{
     width: 100%;
   }
 }
 .product_name{
+
   position: relative;
   width: 100%;
   text-align: center;
   padding: 20px;;
+  min-height: 40px;
   
   span{
     font-weight: 700;
@@ -54,16 +73,17 @@
   width: 100%;
   text-align: center;
   small{
-    font-size:80%
+    font-size:70%
   }
   b{
-    font-size:1.3em;
+    font-size:1.2em;
     margin-left:5px;
     font-weight: 700;
   }
 }
 .add_to_card{
   width: 100%;
+  margin-top: 10px;
   button{
     width: 100%;
     background-color: #1b1a20;

@@ -9,17 +9,22 @@ const initialState = {
 function SizeFilter() {
   const [state, setstate] = React.useState(initialState)
   return (
-    <div className="sizeFilter">
-      {
-        state.sizes.map((item, i) =>
-          <div onClick={() => changeSelectedSize(item)} key={i} className={state.selectedSize === item ? "size active" : "size"}>
-            <span>{item}</span>
-          </div>
-        )
-      }
+    <div className="sizeSection">
+      <div className="title">
+        <h4>Sizes:</h4>
+      </div>
+      <div className="sizeFilter">
+        {
+          state.sizes.map((item, i) =>
+            <div onClick={() => changeSelectedSize(item)} key={i} className={state.selectedSize === item ? "size active" : "size"}>
+              <span>{item}</span>
+            </div>
+          )
+        }
+      </div>
     </div>
-  )
 
+  )
   function changeSelectedSize(item) {
     if (item === state.selectedSize)
       item = "";
