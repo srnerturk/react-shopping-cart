@@ -4,6 +4,12 @@ const initialState = {
   sizes: [
     "XS", "S", "M", "ML", "L", "XL", "XXL"
   ],
+  orders: [
+    { id: 0, text: "Select" },
+    { id: 1, text: "Lowest to Highest" },
+    { id: 2, text: "Highest to Lowest" }
+  ],
+  selectedOrder: 0,
   selectedSize: ""
 }
 function SizeFilter() {
@@ -21,6 +27,17 @@ function SizeFilter() {
             </div>
           )
         }
+      </div>
+
+      <div className="title">
+        <h4>Order by:</h4>
+      </div>
+      <div className="order">
+        <select>
+          {state.orders.map((item, i) =>
+            <option vaue={item.id}>{item.text}</option>
+          )}
+        </select>
       </div>
     </div>
 

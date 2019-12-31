@@ -9,19 +9,19 @@
   border:1px solid transparent;
   cursor: pointer;
   position: relative;
+  min-width: 210px;
   margin-bottom: 20px;
-
   .free_shipping{
     display: inline-block;
     position: absolute;
     background: #000;
     right: 0;
     top:0;
-    padding: 5px;
+    padding: 3px 7px;
     span{
       line-height: 24px;
       color:#fff;
-      font-size:12px;
+      font-size:11px;
       font-weight: 300;
     }
   }
@@ -31,13 +31,11 @@
   }
 }
 .product_name{
-
   position: relative;
   width: 100%;
   text-align: center;
   padding: 20px;;
   min-height: 40px;
-  
   span{
     font-weight: 700;
     font-size:18px;
