@@ -4,7 +4,7 @@ import SizeFilter from '../components/sizeFilter/sizeFilter';
 import Product from '../components/product/product';
 import Store, { ShoppingCartContext } from '../store/context';
 const apiUrl = "/";
-const productsUrl = "data/products.json";
+const productsUrl = "getdata";
 const initialState = {
   products: []
 }
